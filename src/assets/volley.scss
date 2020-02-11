@@ -1,0 +1,30 @@
+$volley-white:rgba(244, 244, 244, 1);
+$volley-primary:rgba(55, 37, 84, 1);
+$volley-secondary:#9d69a3;
+$volley-copy:#7F7F7F;
+
+::selection {
+  background: $volley-primary; /* WebKit/Blink Browsers */
+  color:$volley-white;
+}
+::-moz-selection {
+  background: $volley-primary; /* Gecko Browsers */
+  color:$volley-white;
+}
+
+.text-copy-primary{color:$volley-copy;}
+
+a{
+	color:$volley-primary;
+	&:hover{
+	color:$volley-secondary;
+	}//:hover
+}//a
+
+header{
+	border-top-color:$volley-primary;
+}
+
+footer{
+	background-color:$volley-primary;
+}
