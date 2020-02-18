@@ -1,7 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Cute+Font|Muli:200|Hind:300|Titillium+Web&display=swap');
+
+        $volley-100:#D9D3DE;
+        $volley-200:#C7BFCF;
+        $volley-300:#B6ABC0;
+        $volley-400:#9284A2;
+        $volley-500:#897B9A;
+        $volley-600:#807192;
+        $volley-700:#6E5E83;
+        $volley-800:#493864;
+        $volley-900:#372554;
+
 $volley-white:rgba(244, 244, 244, 1);
-$volley-primary:rgba(55, 37, 84, 1);
+$volley-primary:$volley-900;
 $volley-secondary:#9d69a3;
 $volley-copy:#7F7F7F;
+
+#volley-triangle{
+	float:right;
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 0 55px 55px 0;
+border-color: transparent $volley-primary transparent transparent;
+}
+
+
+
+.theme-light .search-highlighted {
+  background: $volley-100;
+}
+
+.theme-light .search-hover:hover {
+  background: $volley-100;
+}
 
 ::selection {
   background: $volley-primary; /* WebKit/Blink Browsers */
@@ -12,6 +43,7 @@ $volley-copy:#7F7F7F;
   color:$volley-white;
 }
 
+// .font-sans{font-family:$GBW-font-copy;}
 .text-copy-primary{color:$volley-copy;}
 
 a{
@@ -28,3 +60,40 @@ header{
 footer{
 	background-color:$volley-primary;
 }
+
+aside {
+
+    blockquote {
+
+    border-left: .25em solid $volley-800;
+    color: black;
+    padding: 0 1em;
+
+}
+
+    margin: 0;
+    padding:0;
+
+&.pquote-r {
+    float: right;
+    width: 60%;
+    font-size: 1.5em;
+    line-height: 0.9;
+    font-style: italic;
+    padding: 0 .25em 0 0;
+} //pquote-r
+
+&.pquote-l {
+    float: left;
+    width: 60%;
+    font-size: 1.5em;
+    line-height: 0.9;
+    font-style: italic;
+    padding: 0 0 0 .25em;
+} //pquote-l
+
+p:first-letter {
+    font-size: 2em;
+    font-weight: bold;
+}//p:first-letter
+}//aside

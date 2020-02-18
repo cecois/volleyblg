@@ -8,7 +8,7 @@
           :to="tag.path"
           v-for="tag in $page.post.tags"
           :key="tag.id"
-          class="border-solid border border-gray-200 rounded-lg px-2 py-1 mr-3 hover:opacity-50">
+          class="border-solid border border-green-200 rounded-lg px-2 py-1 mr-3 hover:opacity-50">
           {{ tag.title }}
         </g-link>
       </div>
@@ -565,7 +565,7 @@ export default {
     padding: 0;
   }
 
-  .markdown-body blockquote {
+/*  .markdown-body blockquote {
     border-left: .25em solid #30855A;
     color: #6a737d;
     padding: 0 1em;
@@ -577,7 +577,7 @@ export default {
 
   .markdown-body blockquote>:last-child {
     margin-bottom: 0;
-  }
+  }*/
 
   .markdown-body kbd {
     background-color: #fafbfc;
