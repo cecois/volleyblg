@@ -63,8 +63,8 @@ module.exports = {
     },
     fontFamily: {
       sans: [
-        'Hind',
-        'Muli',
+        'Karla',
+        // 'Muli',
         'Catamaran',
         'Nunito Sans',
         'Roboto',

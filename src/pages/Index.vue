@@ -10,7 +10,7 @@
           <span>~{{ post.node.timeToRead }}min</span>
         </div>
 
-        <div class="text-lg mb-4">
+        <div class="text-sm mb-4">
           {{ post.node.summary }}
         </div>
 

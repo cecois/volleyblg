@@ -7,10 +7,17 @@
       </nav>
       <nav class="container mx-auto flex flex-wrap justify-between items-center py-8">
         <div>
-          <a href="volleyconsulting.com"><g-image src="../../static/logo.svg" class="w-40" alt="logo" />Volley Home
+          <p class="items-end text-right p-5">
+            <a class="GBW-branding" href="/">
+              <g-image @mouseenter="hovers.blogHome=!hovers.blogHome" v-if="!hovers.blogHome" src="../../static/volley-logo-play-blog.svg" class="w-30" alt="blog logo" />
+              <g-image @mouseleave="hovers.blogHome=!hovers.blogHome" v-if="hovers.blogHome" src="../../static/volley-logo-play-blog-hover.svg" class="w-30" alt="blog logo" />
+            </a>
+          <a class="GBW-branding" style="float:right;" href="volleyconsulting.com">
+            <g-image @mouseenter="hovers.volleyHome=!hovers.volleyHome" v-if="!hovers.volleyHome" src="../../static/volley-logo-play.svg" class="w-30" alt="main logo" />
+            <g-image @mouseleave="hovers.volleyHome=!hovers.volleyHome" v-if="hovers.volleyHome" src="../../static/volley-logo-play-hover.svg" class="w-30" alt="main logo" />
           </a>
-          <g-link v-if="theme === 'theme-light'" to="/"><g-image src="../../static/logo.svg" class="w-40" alt="logo" /></g-link>
-          <g-link v-else to="/"><g-image src="../../static/logo_dark_mode.svg" class="w-40" alt="logo" /></g-link>
+          </p>
+            
         </div>
         <div class="block lg:hidden">
           <button @click="toggle" class="flex items-center px-3 py-2 border rounded border-gray-500 hover:text-gray-600 hover:border-gray-600">
@@ -45,7 +52,7 @@
       </nav>
       
     </header>
-    <div class="flex-grow pl-10">
+    <div class="flex-grow pl-20 text-2xl">
       Volley's smurf about smurf cleaning and enrichment issues.
     </div>
     <div class="flex-grow">
@@ -91,7 +98,7 @@
             </a>
           </li> -->
           <li class="mr-8 mb-6 lg:mb-0">
-            <theme-switcher :theme="theme" @themeChanged="updateTheme" />
+            <!-- <theme-switcher :theme="theme" @themeChanged="updateTheme" /> -->
           </li>
         </ul>
       </div>
@@ -127,6 +134,7 @@ export default {
     return {
       isOpen: false,
       theme: '',
+      hovers:{blogHome:false,volleyHome:false}
     }
   },
   methods: {

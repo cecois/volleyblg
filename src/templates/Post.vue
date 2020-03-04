@@ -12,7 +12,7 @@
           {{ tag.title }}
         </g-link>
       </div>
-      <div class="markdown-body mb-8" v-html="$page.post.content" />
+      <div class="markdown-body mb-8 text-sm" v-html="$page.post.content" />
       <!-- <div class="mb-8">
         <g-link to="/blog" class="font-bold uppercase">Back to Blog</g-link>
       </div> -->
@@ -24,7 +24,7 @@
 query Post ($path: String!) {
   post: post (path: $path) {
     title
-    date (format: "MMMM D, Y")
+    date (format: "Y.MMMM.D")
     content
     tags {
       title
@@ -94,11 +94,11 @@ export default {
   }
 
   .markdown-body {
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-    color: #24292e;
+    -ms-text-size-adjust: 90%;
+    -webkit-text-size-adjust: 90%;
+    color: #7F7F7F;
     line-height: 1.5;
-    font-size: 20px;
+    /*font-size: 20px;*/
     line-height: 1.5;
     word-wrap: break-word;
   }

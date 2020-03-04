@@ -36,8 +36,22 @@ export default function (Vue, { router, head, isClient }) {
 
   head.meta.push({
     name: 'author',
-    content: 'Andre Madarang'
+    content: 'C.C. Miller'
   })
+
+    head.meta.push({
+    name: 'apple-mobile-web-app-title',
+    content: 'Volley Consulting Blog'
+  })
+  head.meta.push({
+    name: 'application-name',
+    content: 'Volley Consulting Blog'
+  })
+
+// head.link.push({
+//     rel: 'icon',
+//     href: './static/volley-logo-play-only.svg'
+//   })
 
   // head.link.push({
   //   rel: 'stylesheet',
